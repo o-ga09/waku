@@ -5,6 +5,7 @@ import { HomePage } from "./templates/home-page.js";
 import { AboutPage } from "./templates/about-page.js";
 import PostPage from "./templates/post-page.js";
 import createPostPage from "./templates/create-postPage.js";
+import LoginPage from "./templates/login-page..js";
 
 export default createPages(async ({ createPage, createLayout }) => {
   createLayout({
@@ -35,5 +36,11 @@ export default createPages(async ({ createPage, createLayout }) => {
     render: "static",
     path: "/post/new",
     component: createPostPage,
+  });
+
+  createPage({
+    render: "static",
+    path: "/login",
+    component: LoginPage,
   });
 });

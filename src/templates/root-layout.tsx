@@ -11,12 +11,12 @@ export const RootLayout = async ({ children }: RootLayoutProps) => {
   const data = await getData();
 
   return (
-    <div id="__waku" className="flex flex-col min-h-screen font-['Nunito']">
+    <div id="__waku" className="font-['Nunito']">
       <meta property="description" content={data.description} />
       <link rel="icon" type="image/png" href={data.icon} />
-      <Header />
+      {/* <Header /> */}
       <main>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

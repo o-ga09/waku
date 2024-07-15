@@ -1,6 +1,5 @@
 import { Link } from "waku";
-
-import { Counter } from "../components/counter.js";
+import { GridBackground } from "../components/background/background.js";
 
 type Post = {
   id: number;
@@ -14,15 +13,8 @@ export const HomePage = async () => {
   ).then((res) => res.json());
 
   return (
-    <div className="flex flex-col">
-      <h1>Post</h1>
-      <ul>
-        {data.map((post) => (
-          <li key={post.id}>
-            <Link to={`/post/${post.id}`}>{post.title}</Link>
-          </li>
-        ))}
-      </ul>
+    <div>
+      <GridBackground />
     </div>
   );
 };

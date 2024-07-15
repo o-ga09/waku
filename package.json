@@ -9,9 +9,15 @@
     "start": "waku start --with-ssr"
   },
   "dependencies": {
+    "@radix-ui/react-label": "^2.0.2",
+    "@tabler/icons-react": "^2.47.0",
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.0.8",
+    "mini-svg-data-uri": "^1.4.4",
     "react": "18.3.0-canary-6c3b8dbfe-20240226",
     "react-dom": "18.3.0-canary-6c3b8dbfe-20240226",
     "react-server-dom-webpack": "18.3.0-canary-6c3b8dbfe-20240226",
+    "tailwind-merge": "^2.2.1",
     "waku": "0.19.4"
   },
   "devDependencies": {

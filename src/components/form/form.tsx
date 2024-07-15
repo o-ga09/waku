@@ -1,4 +1,4 @@
-export const Form = ({
+export const PostForm = ({
   createPost,
 }: {
   createPost: (formData: FormData) => Promise<void>;
